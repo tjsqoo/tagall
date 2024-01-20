@@ -16,7 +16,7 @@ export default async (option) => {
           console.log(err);
           return;
         }
-        console.log(`Your server is ready !`);
+        console.log(`Your server is ready ${option.PORT}!`);
       });
 
     return app;
