@@ -3,8 +3,9 @@ import express from 'express';
 const router = express.Router();
 
 /* GET home page. */
-router.get('/', (req, res, next) => {
-  res.render('index', { title: 'Express' });
+router.get('/', function (req, res, next) {
+  res.send('respond with a resource');
+  return router;
 });
 
 export default router;

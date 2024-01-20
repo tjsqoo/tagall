@@ -13,15 +13,13 @@ module.exports = {
     combine_logs: true,
     merge_logs: true,
     time: true,
-    // pid_file: "./app.pid",
+    pid_file: "./app.pid",
     env_production: {
       NODE_ENV: "PROD"
     },
     env: {
       NODE_ENV: "DEV",
-      EXPRESS: {
-        PORT: 3500,
-      },
+      PORT: 3300,
       REDIS: {
         HOST: '127.0.0.1',
         PORT: 6379,

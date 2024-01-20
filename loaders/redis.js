@@ -22,5 +22,7 @@ export default async (option) => {
     await client.set('key', '123123');
     const value = await client.get('key');
     console.log(value);
-    await client.disconnect();
+    // await client.disconnect();
+
+    return client;
 }
