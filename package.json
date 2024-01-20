@@ -4,7 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start ./conf/ecosystem.config.cjs",
+    "restart": "pm2 reload ./conf/ecosystem.config.cjs",
+    "stop": "pm2 delete ./conf/ecosystem.config.cjs"
   },
   "author": "",
   "license": "ISC",

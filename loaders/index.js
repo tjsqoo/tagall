@@ -10,8 +10,7 @@ export default async () =>  {
     const envPath = path.join(rootPath, 'conf/.env');
     dotenv.config({path: envPath});
 
-    const EXPRESS_ENV = JSON.parse(process.env.EXPRESS)
-    const application = await express(EXPRESS_ENV);
+    const application = await express(JSON.parse(process.env.EXPRESS));
     // const mongoConnection = await mongoose(process.env);
-    const redisDatabase = await redis(process.env);
+    const redisDatabase = await redis(JSON.parse(process.env.REDIS));
 }

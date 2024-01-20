@@ -2,11 +2,11 @@ import { createClient } from 'redis';
 
 export default async (option) => {
     const client = createClient({
-        username: option.REDIS_USERNAME, // use your Redis user. More info https://redis.io/docs/management/security/acl/
-        password: option.REDIS_PASSWORD, // use your password here
+        username: option.USERNAME, // use your Redis user. More info https://redis.io/docs/management/security/acl/
+        password: option.PASSWORD, // use your password here
         socket: {
-            host: option.REDIS_HOST,
-            port: option.REDIS_PORT,
+            host: option.HOST,
+            port: option.PORT,
             // tls: true,
             // key: readFileSync('./redis_user_private.key'),
             // cert: readFileSync('./redis_user.crt'),
